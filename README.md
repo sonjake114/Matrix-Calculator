@@ -1,4 +1,4 @@
-# numc
+# Matrix Calculator
 
 Here's what I did in project 4:
 I used basic row-major matrix. so the row*width+col of index would give (row, col) of a certain 2d matrix. For simple add, subtract, neg, abs functions I just integrated the data portion of matrix using the simple iteration and preformed operations each element one by one. For more complicated operation such as mul and pow. I used the vector dot product to multiply each row and col. Also, I used transpose of matrix to improve the speed because the cache blocking will improve the speed of algorithm. In terms of speed up, I majorly used unrolled loop. So I unrolled every major loop I can find using the method we were taught in lab. And I used OpenMP Parallel computation using 4 corse with hyperthreads.
